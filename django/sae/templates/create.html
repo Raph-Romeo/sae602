@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SAE | Create</title>
+</head>
+<body>
+ <a href="/"> Home </a>
+ <h1> Create account </h1>
+ <form action="/create" method="post">
+   {% csrf_token %}
+   <input value="" name="name" id="name" type="text" placeholder="Account name" required>
+   <input type="submit" value="Confirm">
+ </form>
+</body>
+</html>

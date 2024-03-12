@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SAE | Index</title>
+</head>
+<body>
+    <a href="/create"> Create account </a>
+    <h1> List of accounts </h1>
+    <ul>
+     {% for account in accounts %}
+        <li> <a href="/account/{{account.id}}"> {{account.id}} - {{account.name}} - {{account.balance}}€ </a></li>
+     {% endfor %}
+    </ul>
+</body>
+</html>

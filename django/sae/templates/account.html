@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SAE | Account {{account.name}}</title>
+</head>
+<body>
+ <a href="/"> Home </a>
+ <h1> Viewing details of account : {{account.name}} </h1>
+ <p> id : {{account.id}} </p>
+ <p> name : {{account.name}} </p>
+ <p> balance : {{account.balance}} </p>
+
+ <form action="/account/{{account.id}}" method="post">
+   <h2> Insert money into account </h2>
+   {% csrf_token %}
+   <input value="" type="number" name="amount" id="amount" placeholder="amount" required>
+   <input type="submit" value="Confirm">
+ </form>
+</body>
+</html>
