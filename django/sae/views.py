@@ -10,7 +10,7 @@ from django.dispatch import Signal
 import asyncio
 import nats.aio.client as nats
 
-nats_address = 'nats://192.168.1.54:4222'
+nats_address = 'nats://192.168.56.105:4222'
 nats_responses = {}
 
 def publish_to_nats(sender, **kwargs):
